@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
+
+    <groupId>com.kayasoftware.pom</groupId>
+    <artifactId>build-support</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>Supporting build files used by Maven base-pom</description>
+    <inceptionYear>2014</inceptionYear>
+
+    <scm>
+        <url>https://github.com/kayasoftware/${project.artifactId}</url>
+        <connection>scm:git:git://github.com/kayasoftware/${project.artifactId}.git</connection>
+        <developerConnection>scm:git:git@github.com:kayasoftware/${project.artifactId}.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>mike.pellegrini</id>
+            <name>Michael Pellegrini</name>
+            <email>mpellegrini@kayasoftware.com</email>
+            <url>http://michaelpellegrini.com</url>
+            <timezone>America/New_York</timezone>
+        </developer>
+    </developers>
+
+    <properties>
+        <!-- Set default encoding to UTF-8 (most plugins) -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
+
+        <!-- Set compiler source and target versions (m-compiler-p) -->
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>${maven.compiler.target}</maven.compiler.source>
+
+        <!-- Set compiler to be more verbose (m-compiler-p) -->
+        <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
+        <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
+    </properties>
+</project>
