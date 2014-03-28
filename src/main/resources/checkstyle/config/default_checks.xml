@@ -199,7 +199,9 @@
         <!-- See http://checkstyle.sf.net/config_misc.html -->
         <module name="ArrayTypeStyle"/>
         <module name="FinalParameters"/>
+        <!-- Modified from original sun-checks.xml
         <module name="TodoComment"/>
+        -->
         <module name="UpperEll"/>
 
     </module>
