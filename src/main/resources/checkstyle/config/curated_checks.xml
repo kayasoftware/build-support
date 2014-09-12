@@ -130,6 +130,8 @@
         <!-- Checks for whitespace                               -->
         <!-- See http://http://checkstyle.sourceforge.net/config_whitespace.html -->
         <module name="EmptyForIteratorPad"/>
+        <!-- Modified from original sun_checks.xml -->
+        <module name="GenericWhitespace"/>
         <module name="MethodParamPad"/>
         <module name="NoWhitespaceAfter"/>
         <module name="NoWhitespaceBefore"/>
