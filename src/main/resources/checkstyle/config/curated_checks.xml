@@ -75,7 +75,10 @@
 
         <!-- Checks for Naming Conventions.                  -->
         <!-- See http://http://checkstyle.sourceforge.net/config_naming.html -->
-        <module name="ConstantName"/>
+        <!-- Modified from original sun_checks.xml -->
+        <module name="ConstantName">
+            <property name="format" value="^([A-Z][A-Z0-9]*(_[A-Z0-9]+)*|logger)$" />
+        </module>
         <module name="LocalFinalVariableName"/>
         <module name="LocalVariableName"/>
         <module name="MemberName"/>
