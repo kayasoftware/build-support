@@ -188,6 +188,8 @@
         <module name="RedundantThrows"/>
         <module name="SimplifyBooleanExpression"/>
         <module name="SimplifyBooleanReturn"/>
+        <!-- Modified from original sun_checks.xml -->
+        <module name="StringLiteralEquality"/>
 
         <!-- Checks for class design                         -->
         <!-- See http://http://checkstyle.sourceforge.net/config_design.html -->
