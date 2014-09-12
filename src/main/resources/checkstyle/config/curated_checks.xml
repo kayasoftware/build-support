@@ -237,6 +237,14 @@
         -->
         <module name="UpperEll"/>
 
+        <!-- Modified from original sun_checks.xml -->
+        <module name="RegexpSinglelineJava">
+            <!-- Check that there are no calls to System.out and System.err. -->
+            <property name="format" value="System\.(out|err)\." />
+            <property name="ignoreComments" value="true" />
+            <property name="message" value="System.out and System.err should not be called directly, use a Logging utility instead." />
+        </module>
+
     </module>
 
 </module>
