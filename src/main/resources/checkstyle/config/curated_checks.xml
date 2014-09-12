@@ -187,6 +187,8 @@
         <module name="FinalClass"/>
         <module name="HideUtilityClassConstructor"/>
         <module name="InterfaceIsType"/>
+        <!-- Modified from original sun_checks.xml -->
+        <module name="MutableException"/>
         <module name="VisibilityModifier"/>
 
 
