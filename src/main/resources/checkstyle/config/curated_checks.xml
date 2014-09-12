@@ -162,6 +162,8 @@
         -->
         <!-- Modified from original sun_checks.xml -->
         <module name="CovariantEquals"/>
+        <!-- Modified from original sun_checks.xml -->
+        <module name="DeclarationOrder"/>
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
         <!-- Modified from original sun_checks.xml -->
