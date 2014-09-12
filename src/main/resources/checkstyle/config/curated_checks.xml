@@ -63,6 +63,12 @@
         <property name="message" value="Line has trailing spaces."/>
     </module>
 
+    <!-- Modified from original sun_checks.xml -->
+    <module name="RegexpMultiline">
+        <!-- Enforces Unix line endings -->
+        <property name="format" value="(?s:\r\n.*)" />
+    </module>
+
     <module name="TreeWalker">
 
         <property name="cacheFile" value="${checkstyle.cache.file}"/>
