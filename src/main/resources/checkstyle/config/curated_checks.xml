@@ -169,6 +169,8 @@
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
         <!-- Modified from original sun_checks.xml -->
+        <module name="FallThrough"/>
+        <!-- Modified from original sun_checks.xml -->
         <module name="HiddenField">
             <property name="ignoreConstructorParameter" value="true"/>
             <property name="ignoreSetter" value="true"/>
