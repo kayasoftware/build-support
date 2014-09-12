@@ -102,7 +102,7 @@
 
 
         <!-- Checks for imports                              -->
-        <!-- See http://http://checkstyle.sourceforge.net/config_import.html -->
+        <!-- See http://http://checkstyle.sourceforge.net/config_imports.html -->
         <module name="AvoidStarImport"/>
         <module name="IllegalImport"/> <!-- defaults to sun.* packages -->
         <module name="RedundantImport"/>
@@ -117,7 +117,6 @@
         </module>
         <!-- Modified from original sun_checks.xml -->
         <module name="MethodLength">
-            <property name="tokens" value="METHOD_DEF"/>
             <property name="max" value="150"/>
             <property name="countEmpty" value="false"/>
         </module>
