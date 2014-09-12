@@ -176,6 +176,8 @@
             <property name="ignoreSetter" value="true"/>
         </module>
         <module name="IllegalInstantiation"/>
+        <!-- Modified from original sun_checks.xml -->
+        <module name="IllegalType"/>
         <module name="InnerAssignment"/>
         <!-- Modified from original sun_checks.xml -->
         <module name="MagicNumber">
