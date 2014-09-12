@@ -5,8 +5,11 @@
 
 <!--
 
+  A curated set of checkstyle rules originally based on the out of the box
+  sun_checks.xml.  All changes are marked with an assoicated comment.
+
   Checkstyle is very configurable. Be sure to read the documentation at
-  http://checkstyle.sf.net (or in your downloaded distribution).
+  http://http://checkstyle.sourceforge.net (or in your downloaded distribution).
 
   Most Checks are configurable, be sure to consult the documentation.
 
@@ -26,19 +29,19 @@
     -->
 
     <!-- Checks that each Java package has a Javadoc file used for commenting. -->
-    <!-- See http://checkstyle.sf.net/config_javadoc.html#JavadocPackage       -->
-    <!-- Modified from original sun-checks.xml
+    <!-- See http://http://checkstyle.sourceforge.net/config_javadoc.html#JavadocPackage       -->
+    <!-- Modified from original sun_checks.xml
     <module name="JavadocPackage">
       <property name="allowLegacy" value="true"/>
     </module>
     -->
 
     <!-- Checks whether files end with a new line.                        -->
-    <!-- See http://checkstyle.sf.net/config_misc.html#NewlineAtEndOfFile -->
+    <!-- See http://http://checkstyle.sourceforge.net/config_misc.html#NewlineAtEndOfFile -->
     <module name="NewlineAtEndOfFile"/>
 
     <!-- Checks that property files contain the same keys.         -->
-    <!-- See http://checkstyle.sf.net/config_misc.html#Translation -->
+    <!-- See http://http://checkstyle.sourceforge.net/config_misc.html#Translation -->
     <module name="Translation"/>
 
     <module name="FileLength"/>
@@ -61,8 +64,8 @@
         <property name="cacheFile" value="${checkstyle.cache.file}"/>
 
         <!-- Checks for Javadoc comments.                     -->
-        <!-- See http://checkstyle.sf.net/config_javadoc.html -->
-        <!-- Modified from original sun-checks.xml
+        <!-- See http://http://checkstyle.sourceforge.net/config_javadoc.html -->
+        <!-- Modified from original sun_checks.xml
         <module name="JavadocMethod"/>
         <module name="JavadocType"/>
         <module name="JavadocVariable"/>
@@ -71,7 +74,7 @@
 
 
         <!-- Checks for Naming Conventions.                  -->
-        <!-- See http://checkstyle.sf.net/config_naming.html -->
+        <!-- See http://http://checkstyle.sourceforge.net/config_naming.html -->
         <module name="ConstantName"/>
         <module name="LocalFinalVariableName"/>
         <module name="LocalVariableName"/>
@@ -84,14 +87,14 @@
 
 
         <!-- Checks for Headers                                -->
-        <!-- See http://checkstyle.sf.net/config_header.html   -->
+        <!-- See http://http://checkstyle.sourceforge.net/config_header.html   -->
         <!-- <module name="Header">                            -->
             <!-- The follow property value demonstrates the ability     -->
             <!-- to have access to ANT properties. In this case it uses -->
             <!-- the ${basedir} property to allow Checkstyle to be run  -->
             <!-- from any directory within a project. See property      -->
             <!-- expansion,                                             -->
-            <!-- http://checkstyle.sf.net/config.html#properties        -->
+            <!-- http://http://checkstyle.sourceforge.net/config.html#properties        -->
             <!-- <property                                              -->
             <!--     name="headerFile"                                  -->
             <!--     value="${basedir}/java.header"/>                   -->
@@ -99,7 +102,7 @@
 
 
         <!-- Checks for imports                              -->
-        <!-- See http://checkstyle.sf.net/config_import.html -->
+        <!-- See http://http://checkstyle.sourceforge.net/config_import.html -->
         <module name="AvoidStarImport"/>
         <module name="IllegalImport"/> <!-- defaults to sun.* packages -->
         <module name="RedundantImport"/>
@@ -107,12 +110,12 @@
 
 
         <!-- Checks for Size Violations.                    -->
-        <!-- See http://checkstyle.sf.net/config_sizes.html -->
-        <!-- Modified from original sun-checks.xml -->
+        <!-- See http://http://checkstyle.sourceforge.net/config_sizes.html -->
+        <!-- Modified from original sun_checks.xml -->
         <module name="LineLength">
             <property name="max" value="130"/>
         </module>
-        <!-- Modified from original sun-checks.xml -->
+        <!-- Modified from original sun_checks.xml -->
         <module name="MethodLength">
             <property name="tokens" value="METHOD_DEF"/>
             <property name="max" value="150"/>
@@ -122,7 +125,7 @@
 
 
         <!-- Checks for whitespace                               -->
-        <!-- See http://checkstyle.sf.net/config_whitespace.html -->
+        <!-- See http://http://checkstyle.sourceforge.net/config_whitespace.html -->
         <module name="EmptyForIteratorPad"/>
         <module name="MethodParamPad"/>
         <module name="NoWhitespaceAfter"/>
@@ -135,13 +138,13 @@
 
 
         <!-- Modifier Checks                                    -->
-        <!-- See http://checkstyle.sf.net/config_modifiers.html -->
+        <!-- See http://http://checkstyle.sourceforge.net/config_modifiers.html -->
         <module name="ModifierOrder"/>
         <module name="RedundantModifier"/>
 
 
         <!-- Checks for blocks. You know, those {}'s         -->
-        <!-- See http://checkstyle.sf.net/config_blocks.html -->
+        <!-- See http://http://checkstyle.sourceforge.net/config_blocks.html -->
         <module name="AvoidNestedBlocks"/>
         <module name="EmptyBlock"/>
         <module name="LeftCurly"/>
@@ -150,20 +153,20 @@
 
 
         <!-- Checks for common coding problems               -->
-        <!-- See http://checkstyle.sf.net/config_coding.html -->
-        <!-- Modified from original sun-checks.xml
+        <!-- See http://http://checkstyle.sourceforge.net/config_coding.html -->
+        <!-- Modified from original sun_checks.xml
         <module name="AvoidInlineConditionals"/>
         -->
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
-        <!-- Modified from original sun-checks.xml -->
+        <!-- Modified from original sun_checks.xml -->
         <module name="HiddenField">
             <property name="ignoreConstructorParameter" value="true"/>
             <property name="ignoreSetter" value="true"/>
         </module>
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
-        <!-- Modified from original sun-checks.xml -->
+        <!-- Modified from original sun_checks.xml -->
         <module name="MagicNumber">
             <!-- some numbers are really not that magic -->
             <property name="ignoreNumbers" value="-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 32, 64, 100, 128, 256, 512, 1000, 1024"/>
@@ -174,8 +177,8 @@
         <module name="SimplifyBooleanReturn"/>
 
         <!-- Checks for class design                         -->
-        <!-- See http://checkstyle.sf.net/config_design.html -->
-        <!-- Modified from original sun-checks.xml
+        <!-- See http://http://checkstyle.sourceforge.net/config_design.html -->
+        <!-- Modified from original sun_checks.xml
         <module name="DesignForExtension"/>
         -->
         <module name="FinalClass"/>
@@ -185,10 +188,10 @@
 
 
         <!-- Miscellaneous other checks.                   -->
-        <!-- See http://checkstyle.sf.net/config_misc.html -->
+        <!-- See http://http://checkstyle.sourceforge.net/config_misc.html -->
         <module name="ArrayTypeStyle"/>
         <module name="FinalParameters"/>
-        <!-- Modified from original sun-checks.xml
+        <!-- Modified from original sun_checks.xml
         <module name="TodoComment"/>
         -->
         <module name="UpperEll"/>
