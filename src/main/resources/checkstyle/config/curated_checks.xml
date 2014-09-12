@@ -160,6 +160,8 @@
         <!-- Modified from original sun_checks.xml
         <module name="AvoidInlineConditionals"/>
         -->
+        <!-- Modified from original sun_checks.xml -->
+        <module name="CovariantEquals"/>
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
         <!-- Modified from original sun_checks.xml -->
