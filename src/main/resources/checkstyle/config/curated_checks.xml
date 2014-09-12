@@ -38,7 +38,11 @@
 
     <!-- Checks whether files end with a new line.                        -->
     <!-- See http://http://checkstyle.sourceforge.net/config_misc.html#NewlineAtEndOfFile -->
-    <module name="NewlineAtEndOfFile"/>
+    <!-- Modified from original sun_checks.xml -->
+    <module name="NewlineAtEndOfFile">
+        <!-- Only accept Unix line separator -->
+        <property name="lineSeparator" value="lf"/>
+    </module>
 
     <!-- Checks that property files contain the same keys.         -->
     <!-- See http://http://checkstyle.sourceforge.net/config_misc.html#Translation -->
