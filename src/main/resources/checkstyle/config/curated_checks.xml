@@ -120,7 +120,11 @@
             <property name="max" value="150"/>
             <property name="countEmpty" value="false"/>
         </module>
-        <module name="ParameterNumber"/>
+        <!-- Modified from original sun_checks.xml -->
+        <module name="ParameterNumber">
+            <property name="max" value="10"/>
+            <property name="tokens" value="METHOD_DEF"/>
+        </module>
 
 
         <!-- Checks for whitespace                               -->
