@@ -36,8 +36,10 @@
     </module>
     -->
 
-    <!-- Checks whether files end with a new line.                        -->
-    <!-- See http://http://checkstyle.sourceforge.net/config_misc.html#NewlineAtEndOfFile -->
+    <module name="SuppressWarningsFilter" />
+
+    <!-- Checks whether files end with a new line. -->
+    <!-- See http://checkstyle.sourceforge.net/config_misc.html#NewlineAtEndOfFile -->
     <module name="NewlineAtEndOfFile"/>
 
     <!-- Checks that property files contain the same keys.         -->
@@ -68,6 +70,8 @@
     <module name="TreeWalker">
 
         <property name="cacheFile" value="${checkstyle.cache.file}"/>
+
+        <module name="SuppressWarningsHolder" />
 
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://http://checkstyle.sourceforge.net/config_javadoc.html -->
